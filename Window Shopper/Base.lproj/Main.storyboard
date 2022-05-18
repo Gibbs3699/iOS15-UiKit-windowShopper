@@ -32,30 +32,66 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" keyboardType="decimalPad" enablesReturnKeyAutomatically="YES"/>
                             </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="32" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qQk-fa-330">
+                                <rect key="frame" x="62" y="471" width="291" height="63"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="52"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="hours" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dna-4K-O1v">
+                                <rect key="frame" x="62" y="542" width="291" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8eD-7L-b6M">
+                                <rect key="frame" x="118" y="826" width="178" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Clear Calculator">
+                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="clearCalculatorPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Xft-zw-2kP"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="21k-Dh-6cL" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="62" id="1F7-mf-GOr"/>
                             <constraint firstItem="9E8-Ii-X5L" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="4Kc-iK-ysP"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="qQk-fa-330" secondAttribute="trailing" constant="61" id="5Sm-eC-OG4"/>
                             <constraint firstItem="hIu-UE-pxY" firstAttribute="height" secondItem="21k-Dh-6cL" secondAttribute="height" id="5yq-n0-zlY"/>
+                            <constraint firstItem="8eD-7L-b6M" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="118" id="8Kq-f6-O1a"/>
+                            <constraint firstItem="qQk-fa-330" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="62" id="97Z-va-cKh"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="dna-4K-O1v" secondAttribute="trailing" constant="61" id="FHz-y5-46K"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="21k-Dh-6cL" secondAttribute="bottom" constant="533" id="G3W-Mc-uC7"/>
+                            <constraint firstItem="8eD-7L-b6M" firstAttribute="top" secondItem="dna-4K-O1v" secondAttribute="bottom" constant="263.5" id="Gjc-sQ-Dtl"/>
+                            <constraint firstItem="dna-4K-O1v" firstAttribute="top" secondItem="qQk-fa-330" secondAttribute="bottom" constant="8" symbolic="YES" id="Krc-nk-Q1o"/>
                             <constraint firstItem="9E8-Ii-X5L" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="LcM-HR-cQO"/>
                             <constraint firstItem="hIu-UE-pxY" firstAttribute="leading" secondItem="21k-Dh-6cL" secondAttribute="leading" id="RJE-dQ-q9v"/>
                             <constraint firstItem="21k-Dh-6cL" firstAttribute="top" secondItem="XaR-74-Myc" secondAttribute="bottom" constant="54" id="YgG-Id-GgU"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="XaR-74-Myc" secondAttribute="bottom" constant="645" id="Z9A-Mt-4I6"/>
+                            <constraint firstItem="8eD-7L-b6M" firstAttribute="top" secondItem="dna-4K-O1v" secondAttribute="bottom" constant="263.5" id="aGC-ih-Ba7"/>
+                            <constraint firstItem="qQk-fa-330" firstAttribute="top" secondItem="hIu-UE-pxY" secondAttribute="bottom" constant="49" id="an0-6J-W2D"/>
                             <constraint firstItem="XaR-74-Myc" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="87" id="cDl-tI-quy"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="8eD-7L-b6M" secondAttribute="trailing" constant="118" id="doj-Gr-isM"/>
                             <constraint firstItem="9E8-Ii-X5L" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="esV-29-GA7"/>
+                            <constraint firstItem="dna-4K-O1v" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="62" id="fTa-DV-cEA"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="21k-Dh-6cL" secondAttribute="trailing" constant="61" id="hqh-9L-7eA"/>
                             <constraint firstItem="hIu-UE-pxY" firstAttribute="top" secondItem="21k-Dh-6cL" secondAttribute="bottom" constant="35" id="i5r-kH-j5z"/>
                             <constraint firstAttribute="bottom" secondItem="9E8-Ii-X5L" secondAttribute="bottom" id="izH-5k-Uuz"/>
                             <constraint firstItem="XaR-74-Myc" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="45" id="j8A-fd-wNU"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="XaR-74-Myc" secondAttribute="trailing" constant="87" id="q4v-Q1-dfg"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="8eD-7L-b6M" secondAttribute="bottom" constant="5" id="r1K-2A-WB2"/>
                             <constraint firstItem="hIu-UE-pxY" firstAttribute="trailing" secondItem="21k-Dh-6cL" secondAttribute="trailing" id="vYS-q3-LJm"/>
+                            <constraint firstItem="dna-4K-O1v" firstAttribute="top" secondItem="qQk-fa-330" secondAttribute="bottom" constant="8" symbolic="YES" id="xuB-7w-bVD"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="hourLabel" destination="dna-4K-O1v" id="vm2-gQ-17e"/>
                         <outlet property="priceTextField" destination="hIu-UE-pxY" id="fwt-RK-OlW"/>
+                        <outlet property="resultLabel" destination="qQk-fa-330" id="XQ9-0j-U8f"/>
                         <outlet property="wageTextField" destination="21k-Dh-6cL" id="uIN-2I-cDQ"/>
                     </connections>
                 </viewController>
